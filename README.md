@@ -9,15 +9,9 @@ You can view and edit my resume directly on Overleaf using the following link:
 
 ## Files
 
-- `resume.tex`: The LaTeX source file for my resume.
+- `Resume.tex`: The LaTeX source file for my resume.
 - `Resume.pdf`: The compiled PDF version of my resume.
 
 ## How to Compile
 
-If you'd like to compile the resume locally, ensure you have LaTeX installed on your system. Then run the following command:
-
-```bash
-pdflatex resume.tex
-```
-
-This will generate the `Resume.pdf` file in the same directory.
+Just edit the `Resume.tex` file, and push to main, it will automatically compile through a GitHub workflow and override the old `Resume.pdf` file.
