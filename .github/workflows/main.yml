@@ -15,16 +15,17 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        pdflatex -interaction=nonstopmode resume.tex
-        pdflatex -interaction=nonstopmode resume.tex
+        pdflatex -interaction=nonstopmode Resume.tex
+        pdflatex -interaction=nonstopmode Resume.tex
       shell: bash
 
     - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add resume.pdf
+        git add Resume.pdf
         git commit -m "Auto-generated PDF from GitHub Action"
         git push
+        echo "PDF generated and pushed successfully."
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
