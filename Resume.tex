@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Rothstein
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jake Rothstein} \\ \vspace{1pt}
+    \small 415-969-0949 $|$ \href{mailto:jake.b.rothstein@gmail.com}{\underline{jake.b.rothstein@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/j-rothstein}{\underline{linkedin.com/in/j-rothstein}} $|$
+    \href{https://github.com/jakerothstein}{\underline{github.com/jakerothstein}} $|$
+    US Citizen
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Georgia Institute of Technology}{Atlanta, GA}
+    {B.S. Computer Science, GPA: 3.9}{(Expected) May 2027}
+    \resumeItemListStart
+      \resumeItem{Threads: System Architecture \& Cyber Security; Member, GreyHat Cyber Security Club}
+      \resumeItem{Courses: Human Dimension of Cybersecurity, Systems \& Networks, Data Structures \& Algorithms, Design \& Analysis of Algorithms, Computer Organization \& Programming, Objects \& Design, Discrete Math}
+    \resumeItemListEnd
+
+    \resumeSubheading{College of San Mateo}{San Mateo, CA}
+    {Dual Enrollment, GPA: 4.0}{2020 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Courses: Intro to OOP (Java), C++, Enterprise DB Management / SQL, Multivariable Calculus}
+    \resumeItemListEnd
+
+    \resumeSubheading{Burlingame High School}{Burlingame, CA}
+    {Valedictorian, GPA: 4.33}{2020 -- 2024}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{The Home Depot}{San Francisco, CA (Remote) / Atlanta, GA}
+    {Software Engineer Intern}{Summer 2025}
+    \resumeItemListStart
+      \resumeItem{Partnered with Product, Design, and Engineering teams to re-architect and enhance event software for 100+ annual events used by 5000+ associates.}
+      \resumeItem{Developed web app with Slack integrations using Java Spring Boot and React, deployed on Google Cloud Kubernetes with automated GitHub CI/CD pipelines.}
+    \resumeItemListEnd
+
+    \resumeSubheading{GT Financial Services Innovation Lab}{Atlanta, GA}
+    {Undergraduate Researcher}{Spring -- Fall 2025}
+    \resumeItemListStart
+      \resumeItem{Designed 150+ annotated credit card agreement questions using numerical reasoning techniques (CoT and PoT) for model training and evaluation.}
+      \resumeItem{Built statistical and visual reports comparing industry and cyber risk over time from SEC 10-K filings using tokenization and semantic analysis.}
+      \resumeItem{Part of Vertically Integrated Projects (VIP) program under Dr. Sudheer Chava; expected publication 2026.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Computacenter}{Remote}
+    {Software Engineer Intern}{2023 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Created a Slack app enabling admins to on/offboard 5K+ employees across systems like ServiceNow, Opsgenie, PRTG, and Slack using FastAPI.}
+      \resumeItem{Developed hardware error monitoring tool interfacing with NocoDB, scaled to 50+ clients.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Neucargo}{San Francisco, CA}
+    {Co-Founder}{Summer 2022}
+    \resumeItemListStart
+      \resumeItem{Developed Smartsheet integration to automate tracking of UPS, FedEx, and MACH1 shipment statuses.}
+    \resumeItemListEnd
+
+    \resumeSubheading{The Burlingame B}{Burlingame, CA}
+    {Managing Editor, Head Photographer}{2021 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Trained 30-person journalism staff in journalistic writing, photography, and digital media.}
+      \resumeItem{Automated daily assignments and deadline reminders, ensuring no gaps in coverage.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{PDF Malware Detector (Millennium Capital)} $|$ \emph{Python, SVM, ML}}{}
+    \resumeItemListStart
+      \resumeItem{Built SVM-based malware detector using 2022 dataset; extracted structural features and scaled data; benchmarked against logistic regression and Random Forest with ~88\% accuracy.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{LeadDog AI} $|$ \emph{Python, Web Scraping, API}}{}
+    \resumeItemListStart
+      \resumeItem{AI lead generation software identifying employees for targeted sales campaigns; bypassed rate limits of public/private APIs.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{PlantX (Columbia AI Seminar)} $|$ \emph{AI Search, Image Classification}}{}
+    \resumeItemListStart
+      \resumeItem{Built AI search algorithm to predict plant disease with ~80\% accuracy.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{StudyBot} $|$ \emph{Python, AWS EC2, Discord API}}{}
+    \resumeItemListStart
+      \resumeItem{Developed multiplayer Discord trivia game using Quizlet sets, deployed to 100+ servers.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Frameworks}{: Java, Python, Go, C++, React, PostgreSQL, Spring Boot, Django} \\
+     \textbf{Software \& Platforms}{: Burp Suite, Docker, Git, Google Cloud, AWS, Figma, Adobe, Jira, Ghidra} \\
+     \textbf{Other}{: Kubernetes, CI/CD}
+    }}
+ \end{itemize}
+
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{Running, Hiking, Photography, Local volunteering}
+ \end{itemize}
+
+\end{document}
