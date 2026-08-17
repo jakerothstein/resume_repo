@@ -65,107 +65,102 @@
 
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \begin{document}
 
 \begin{center}
     \textbf{\Huge \scshape Jake Rothstein} \\ \vspace{1pt}
-    \small 415-969-0949 $|$ \href{mailto:jake.b.rothstein@gmail.com}{\underline{jake.b.rothstein@gmail.com}} $|$ 
+    \small 415-969-0949 $|$ \href{mailto:jake.b.rothstein@gmail.com}{\underline{jake.b.rothstein@gmail.com}} $|$
     \href{https://linkedin.com/in/j-rothstein}{\underline{linkedin.com/in/j-rothstein}} $|$
     \href{https://github.com/jakerothstein}{\underline{github.com/jakerothstein}} $|$
     US Citizen
 \end{center}
 
-%-----------Education-----------
+%-----------EDUCATION-----------
 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading{Georgia Institute of Technology}{Atlanta, GA}
     {B.S. Computer Science, GPA: 3.9}{May 2028}
     \resumeItemListStart
-      \resumeItem{Threads: System Architecture \& Cyber Security; Member, GreyHat Cyber Security Club}
-      \resumeItem{Courses: OS, Human Dimension of Cybersecurity, Systems \& Networks, Data Structures \& Algorithms, Design \& Analysis of Algorithms, Computer Organization \& Programming, Objects \& Design, Discrete Math}
+      \resumeItem{Concentrations: Systems \& Architecture, Cybersecurity. Member, GreyHat Cybersecurity Club.}
+      \resumeItem{Coursework: Operating Systems, Systems \& Networks, Design \& Analysis of Algorithms, Computer Organization \& Programming.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
-%-----------Experence-----------
+
+%-----------EXPERIENCE-----------
 
 \section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading{GitHub}{San Francisco, CA}
-    {Software Engineer Intern}{Summer 2026}
+    {Software Engineer Intern}{May 2026 -- August 2026}
     \resumeItemListStart
-      \resumeItem{Built GCP (Vertex AI) support from 0→1 as a first-party model provider on GitHub Copilot's ORCA deployment platform, enabling automated deployment and health checks for Gemini and Anthropic models}
+        \resumeItem{Integrated Google Cloud as a first-party model provider into Copilot's model-serving platform in Go, automating deployment and health checks across 11 production endpoints.}
+        \resumeItem{Audited the migration and identified idle provisioned capacity, raising throughput on a constrained endpoint 4.6x.}
+        \resumeItem{Resolved a production outage by tracing 500 errors to an unindexed MySQL sort scanning 185K rows to return 127; instrumented the pipeline in Datadog, uncovering a nil stats client silently dropping every metric.}
     \resumeItemListEnd
 
-    \resumeSubheading{GT Financial Services Innovation Lab}{Atlanta, GA}
-    {Undergraduate NLP Researcher}{2025 -- Present}
+    \resumeSubheading{Georgia Tech Financial Services Innovation Lab}{Atlanta, GA}
+    {Undergraduate Research Assistant, Natural Language Processing}{2025 -- Present}
     \resumeItemListStart
-        \resumeItem{Created LangGraph T2SQL pipeline with HITL ambiguity detection, achieving 93.9\% recall \& 80.6\% accuracy.}
-        \resumeItem{Reduced unnecessary user interruptions by 3x by designing a multi-signal confidence scoring system that determines when the AI should answer vs. ask for clarification.}        
-        \resumeItem{Annotated 150+ credit card agreement questions using CoT and PoT reasoning for NLP model training.}
+        \resumeItem{Built a natural-language-to-SQL pipeline in Python using LangGraph with human-in-the-loop ambiguity detection, reaching 93.9\% recall and 80.6\% accuracy.}
+        \resumeItem{Cut unnecessary user interruptions 3x by designing a multi-signal confidence scoring system that determines when the model answers directly versus asks for clarification.}
     \resumeItemListEnd
 
-    \resumeSubheading{The Home Depot}{San Francisco, CA (Remote) / Atlanta, GA}
-    {Software Engineer Intern}{Summer 2025}
+    \resumeSubheading{The Home Depot}{Atlanta, GA / Remote}
+    {Software Engineer Intern}{May 2025 -- August 2025}
     \resumeItemListStart
-      \resumeItem{Partnered with Product, Design, and Engineering teams to re-architect and enhance event software for 100+ annual events used by 5000+ associates.}
-      \resumeItem{Developed web app with Slack integrations using Java Spring Boot and React, deployed on Google Cloud Kubernetes with automated GitHub CI/CD pipelines.}
+      \resumeItem{Re-architected internal event software supporting 100+ annual events and 5,000+ associates, driving requirements across Product, Design, and Engineering.}
+      \resumeItem{Built a Slack-integrated web application in Java Spring Boot and React, deployed on Google Kubernetes Engine with automated GitHub CI/CD pipelines.}
     \resumeItemListEnd
-
-    
 
     \resumeSubheading{Computacenter}{Remote}
     {Software Engineer Intern}{2022 -- 2023}
     \resumeItemListStart
-      \resumeItem{Created a Slack app enabling admins to on/offboard 5K+ employees across systems like ServiceNow, Opsgenie, PRTG, and Slack using FastAPI.}
-      \resumeItem{Developed hardware error monitoring tool interfacing with NocoDB, scaled to 50+ customers.}
+      \resumeItem{Built a Slack application in FastAPI that let administrators onboard and offboard 5,000+ employees across ServiceNow, Opsgenie, PRTG, and Slack from a single workflow.}
+      \resumeItem{Developed a hardware error monitoring tool backed by NocoDB, scaled to 50+ customers.}
     \resumeItemListEnd
 
     \resumeSubheading{Neucargo}{San Francisco, CA}
-    {Co-Founder}{Summer 2022}
+    {Co-Founder}{2022}
     \resumeItemListStart
-      \resumeItem{Developed Smartsheet integration to automate tracking of UPS, FedEx, and MACH1 shipment statuses.}
+      \resumeItem{Built a Smartsheet integration automating shipment status tracking across UPS, FedEx, and MACH1, eliminating 6+ hours of manual lookups per week.}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-%-----------Projects-----------
+
+%-----------PROJECTS-----------
 
 \section{Projects}
   \resumeSubHeadingListStart
-     \resumeProjectHeading{\textbf{Matchy (JPMorganChase Hackathon)} $|$ \emph{React, TypeScript, FastAPI, Python, AI}}{\textit{Fall 2025}}
+
+    \resumeProjectHeading{\textbf{Matchy} $|$ \emph{FastAPI, Python, React, TypeScript}}{\textit{Fall 2025}}
     \resumeItemListStart
-      \resumeItem{Created application for non-profit Team IMPACT to intelligently connect student-athletes to children with serious illnesses or diseases using web scraping and AI match pairing. Automated alumni outreach emails.}
-    \resumeItemListEnd
-    \vspace{-4pt}
-    
-    \resumeProjectHeading{\textbf{PDF Malware Detector (Millennium Capital)} $|$ \emph{Python, SVM, ML}}{\textit{Spring 2025}}
-    \resumeItemListStart
-      \resumeItem{Built SVM-based malware detector using 2022 dataset; extracted structural features and scaled data; benchmarked against logistic regression and Random Forest with ~88\% accuracy. Presented project at Millennium NYC office.}
+      \resumeItem{Built a matching service for the non-profit Team IMPACT pairing student-athletes with children facing serious illness, combining web scraping with model-driven ranking; placed 2nd at the JPMorganChase hackathon and earned an internship offer.}
     \resumeItemListEnd
     \vspace{-4pt}
 
-    \resumeProjectHeading{\textbf{LeadDog AI (Startup)} $|$ \emph{Python, Web Scraping, API}}{\textit{Summer 2024}}
+    \resumeProjectHeading{\textbf{PDF Malware Detector} $|$ \emph{Python, scikit-learn, SVM}}{\textit{Spring 2025}}
     \resumeItemListStart
-      \resumeItem{AI lead generation software identifying employees for targeted sales campaigns; bypassed rate limits of public/private APIs using various techniques.}
+      \resumeItem{Trained an SVM malware classifier on a 2022 PDF corpus, engineering structural features and benchmarking against logistic regression and random forest to reach 88\% accuracy; presented results at Millennium's New York office.}
     \resumeItemListEnd
     \vspace{-4pt}
 
-    \resumeProjectHeading{\textbf{StudyBot (Personal)} $|$ \emph{Python, AWS EC2, Discord API}}{\textit{Fall 2020}}
-    \resumeItemListStart
-      \resumeItem{Developed multiplayer Discord trivia game using Quizlet sets, deployed to 100+ discord servers.}
-    \resumeItemListEnd
   \resumeSubHeadingListEnd
-%-----------PROGRAMMING SKILLS-----------
+
+%-----------TECHNICAL SKILLS-----------
+
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, Go, JavaScript, C/C++, SQL, HTML/CSS, Assembly, Markdown, PostgreSQL, TypeScript} \\
-     \textbf{Frameworks}{: Java Spring Boot, Flask, ReactJS, Django, Material-UI, CSS, Kubernetes, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, Datadog, Sentry, Splunk, Burp Suite, VSCode, PyCharm, GoLand, Cursor, CoPilot} \\
-     \textbf{Libraries}{: Pandas, NumPy, PyTorch, TensorFlow, OpenCV, BeautifulSoup, Playwright, Selenium} \\
-     \textbf{Other Skills}{: AWS, GCP, Grafana, Linux, Adobe (PS, LR, Premiere), Jira, Ghidra, CI/CD pipelines, NLP, MongoDB}
+     \textbf{Languages}{: Go, Python, Java, TypeScript, JavaScript, C/C++, SQL} \\
+     \textbf{Backend \& Infrastructure}{: Spring Boot, FastAPI, Kubernetes, Docker, GCP, AWS, MySQL, PostgreSQL, MongoDB} \\
+     \textbf{Observability \& Tooling}{: Datadog, Grafana, Sentry, Splunk, Git, CI/CD, Linux} \\
+     \textbf{Frontend \& Libraries}{: React, HTML/CSS, Pandas, NumPy, PyTorch, Playwright, BeautifulSoup}
     }}
  \end{itemize}
+
 \end{document}
